@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5de3831a-fe8d-4d4a-8bfa-a4d297ea0881" name="Default Changelist" comment="" />
+    <list default="true" id="5de3831a-fe8d-4d4a-8bfa-a4d297ea0881" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gG2bM8ad02GsuVdimp4Y3u5Fq9" />
   <component name="ProjectViewState">
@@ -26,6 +36,9 @@
       <option name="presentableId" value="Default" />
       <updated>1597726679450</updated>
       <workItem from="1597726680669" duration="1357000" />
+      <workItem from="1597728283900" duration="97000" />
+      <workItem from="1597732362253" duration="1413000" />
+      <workItem from="1597733886623" duration="6582000" />
     </task>
     <servers />
   </component>
@@ -37,5 +50,21 @@
       <screen x="0" y="1080" width="1920" height="1080" />
     </state>
     <state x="622" y="1397" width="666" height="452" key="EditFileWatcherDialog/0.25.1920.1055/0.1080.1920.1080@0.1080.1920.1080" timestamp="1597726846107" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1597728380448">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.25.1920.1055/0.1080.1920.1080@0.1080.1920.1080" timestamp="1597728380448" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1597728380448">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.center/0.25.1920.1055/0.1080.1920.1080@0.1080.1920.1080" timestamp="1597728380448" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1597728380448">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.left/0.25.1920.1055/0.1080.1920.1080@0.1080.1920.1080" timestamp="1597728380448" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1597728380448">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.right/0.25.1920.1055/0.1080.1920.1080@0.1080.1920.1080" timestamp="1597728380448" />
   </component>
 </project>

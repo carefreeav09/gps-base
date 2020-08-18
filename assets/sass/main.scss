@@ -5,17 +5,20 @@
 
 // Set your brand colors
 $purple: #8A4D76;
+$red : #ff0000;
+$blue : #0000ff;
 $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$floral-white : #f1e7e7;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
+$link: $blue;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -24,7 +27,24 @@ $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$footer-background-color: $floral-white;
 
+.navbar--small{
+  height: 30px !important;
+  min-height: 30px !important;
+  z-index: 9999 !important;
+}
+
+$breakpoint-small-desktops: 1022px;
+@media (min-width: $breakpoint-small-desktops) {
+  .navbar--middle{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
