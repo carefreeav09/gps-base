@@ -1,33 +1,69 @@
-@charset "utf-8";
-
-// Import a Google Font
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+$family-sans-serif: "Nunito", sans-serif;
 
-// Set your brand colors
-$purple: #8A4D76;
-$red : #ff0000;
-$blue : #0000ff;
-$pink: #FA7C91;
-$brown: #757763;
+$primary-palette: #3B4874;
+$primary-palette-invert: #fff;
+
+$secondary-palette: #DCD6F7;
+$secondary-palette-invert: #fff;
+
+$text-palette: #333333;
+$text-palette-invert: #fff;
+
+$accent-palette: #4ACFD6;
+$accent-palette-invert: #fff;
+
+$primary: $primary-palette;
+$primary-invert: $primary-palette-invert;
+
+$transparent: #ffffff00;
+
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
-$floral-white : #f1e7e7;
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
+
 $grey-light: $beige-light;
-$primary: $purple;
-$link: $blue;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+$footer-background-color : $primary-palette;
+$footer-color: $white;
+$navbar-background-color: $primary-palette;
+$strong-color: $white;
+$navbar-item-color: $white;
+$navbar-dropdown-background-color: $primary-palette;
+$navbar-dropdown-item-hover-background-color: $primary-palette;
+$strong-color: $text-palette;
+$link: $accent-palette;
+$table-background-color: $transparent;
+$table-row-active-background-color: $transparent;
+$hr-background-color: $grey-light;
+$input-background-color: $beige-lighter;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-$footer-background-color: $floral-white;
+
+// 5. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+        "twitter":($twitter, $twitter-invert),
+        "linkedin": ($linkedin, $linkedin-invert),
+        "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "../../node_modules/bulma/bulma";
 
 .navbar--small{
   height: 30px !important;
@@ -46,14 +82,43 @@ $breakpoint-small-desktops: 1022px;
   }
 }
 
-// Import only what you need from Bulma
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/elements/button.sass";
-@import "../../node_modules/bulma/sass/elements/container.sass";
-@import "../../node_modules/bulma/sass/elements/title.sass";
-@import "../../node_modules/bulma/sass/form/_all.sass";
-@import "../../node_modules/bulma/sass/components/navbar.sass";
-@import "../../node_modules/bulma/sass/layout/hero.sass";
-@import "../../node_modules/bulma/sass/layout/section.sass";
-@import "../../node_modules/bulma/bulma";
+.flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left{
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+}
+
+.figure--size-200-300 {
+  height: 200px;
+  width: 300px;
+}
+
+.hr--half{
+  width: 50%;
+}
+
+.hr__red {
+  border: 1px solid #e03f3f;
+}
+
+.td__centered {
+  padding: 5px;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.buttons__float-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.table__rows-no-border tbody tr{
+  border-bottom: 0;
+}
